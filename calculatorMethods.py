@@ -90,19 +90,6 @@ def doTheOperation(num1,num2,sign):
             print("Error on the operation")
     
     return result if result else print('Something went really wrong')
-            
-
-
-"""def is_valid_operation(operation):
-    return operation in ["+", "-", "*", "/"]
-
-def defineOperation():
-    while True:
-        operation = input("Enter the operation (+, -, *, /): ").strip()
-        if is_valid_operation(operation):
-            return operation
-        else:
-            print("Invalid operator input. Please, enter only one of the operation signs (+, -, *, /): ")"""
 
 # active main function
 calculatorTwo()
