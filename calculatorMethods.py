@@ -6,6 +6,9 @@ def calculatorTwo():
     #method to welcome
     welcomeAll()
 
+    # Want to perform an operation?
+    choiceOfOperation()
+
     # Method to take the data
     numOne = inputNumOne()
 
@@ -18,6 +21,10 @@ def calculatorTwo():
 
     calculatorResult = doTheOperation(numOne, numTwo, operation)
 
+    # runaway for goats
+
+    seeYouSoon()
+
     #return something you fool
     return calculatorResult
 
@@ -25,6 +32,12 @@ def calculatorTwo():
 
 def welcomeAll():
     return print("Welcome to the Simple Calculator!")
+
+# give people the choice
+def choiceOfOperation():
+    myChoice = input("Would you like to use the calculator?\n If 'YES' press 1, if 'NO' press 2: ")
+
+    return inputNumOne() if myChoice == 1 else seeYouSoon()
 
 # check numbers method
 def checkNums(prompt):
@@ -90,6 +103,11 @@ def doTheOperation(num1,num2,sign):
             print("Error on the operation")
     
     return result if result else print('Something went really wrong')
+
+# escape
+def seeYouSoon():
+    print("Thanks a million and see you soon")
+    exit()
 
 # active main function
 calculatorTwo()
